@@ -1,0 +1,14 @@
+# tomcat port
+
+server:
+  port: 9090
+
+#random port
+#server: 
+#   port: ${random.int[1024,9999]}
+
+
+# custom attributes
+
+msg1: hello
+msg2: server port ${msg1}

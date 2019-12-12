@@ -13,21 +13,16 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>01-springboot-hello</module>
+		<module>02-springboot-config</module>
 	</modules>
 	
 	<properties>
 		<java.version>1.8</java.version>
-		<springboot.version>2.2.2.RELEASE</springboot.version>
 	</properties>
 	
-	<dependencyManagement>
+	<!-- <dependencyManagement>
 		<dependencies>
-			<!-- 配置springBoot的web启动器 -->
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-web</artifactId>
-				<version>${springboot.version}</version>
-			</dependency>
+			
 		</dependencies>
-	</dependencyManagement>
+	</dependencyManagement> -->
 </project>
