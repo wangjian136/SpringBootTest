@@ -1,4 +1,0 @@
-#freemarker config
-spring: 
-  freemarker: 
-    suffix: .ftl
