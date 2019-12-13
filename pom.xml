@@ -15,6 +15,7 @@
 		<module>01-springboot-hello</module>
 		<module>02-springboot-config</module>
 		<module>03-springboot-jsp</module>
+		<module>04-spring-freemarker</module>
 	</modules>
 	
 	<properties>
