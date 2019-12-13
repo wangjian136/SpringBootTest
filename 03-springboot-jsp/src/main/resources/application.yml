@@ -1,0 +1,5 @@
+#jsp config
+spring: 
+  mvc: 
+    view: 
+      suffix: .jsp
