@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thymeleaf</title>
+</head>
+<body>
+	<table border="0">
+		<tr>
+			<th>编号</th>
+			<th>名称</th>
+			<th>描述</th>
+		</tr>
+		<!-- <tr th:each="blog : ${list}">
+			<td th:text="${blog.id}"></td>
+			<td th:text="${blog.name}"></td>
+			<td th:text="${blog.descs}"></td>
+		</tr> -->
+		<tr th:each="maps : ${map}">
+			<td th:each="entry : ${maps}" th:text="${entry.value.id}"></td>
+			<td th:each="entry : ${maps}" th:text="${entry.value.name}"></td>
+			<td th:each="entry : ${maps}" th:text="${entry.value.descs}"></td>
+		</tr>
+	</table>
+</body>
+</html>

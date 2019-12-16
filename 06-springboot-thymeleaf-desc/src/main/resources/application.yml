@@ -1,0 +1,4 @@
+#thymeleaf config
+spring: 
+  thymeleaf: 
+    suffix: .html

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thymeleaf</title>
+</head>
+<body>
+	<!-- 格式化时间 -->
+	<span th:text="${#dates.format(time)}"></span><br/>
+	<span th:text="${#dates.format(time,'yyyy-MM-dd')}"></span><br/>
+	<!-- 获取年月日 -->
+	<span th:text="${#dates.year(time)}"></span><br/>
+	<span th:text="${#dates.month(time)}"></span><br/>
+	<span th:text="${#dates.day(time)}"></span>
+	<hr/>
+	<!-- 条件判断
+		gt：great than（大于）>
+		ge：great equal（大于等于）>=
+		eq：equal（等于）==
+		lt：less than（小于）<
+		le：less equal（小于等于）<=
+		ne：not equal（不等于）!=
+	 -->
+	<span th:text="${sex == '男'}"></span>
+	<span th:if="${sex} eq '男' ">
+		性别：男
+	</span>
+	<span th:if="${sex} eq '女' ">
+		性别：女
+	</span>
+	<hr/>
+	<!-- switch...case... -->
+	<div th:switch="${num}">
+	  <p th:case="1">数字是1</p>
+	  <p th:case="2">数字是2</p>
+	</div>
+	<hr/>
+	<!-- 获取作用域对象值 -->
+	request:<span th:text="${req}"/><br/>
+	session:<span th:text="${session.ses}"/><br/>
+	application:<span th:text="${application.app}"/>
+</body>
+</html>
