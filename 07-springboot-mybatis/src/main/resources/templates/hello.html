@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thymeleaf</title>
+</head>
+<body>
+	<!-- th:text在页面中输出值，值可以是el表达式 -->
+	<span th:text="love"></span><br/>
+	<span th:text="${msg}"></span><br/>
+	<!-- th:value：可以将一个值放入input标签的value中 -->
+	<input type="text" th:value="${msg}"/><br/>
+	<!-- 判断字符串是否为空 -->
+	<span th:text="${#strings.isEmpty('')}"></span><br/>
+	<span th:text="${#strings.isEmpty(msg)}"></span><br/>
+	<!-- 判断字符串是否包含相关子串 -->
+	<span th:text="${#strings.contains(msg,'h')}"></span><br/>
+	<span th:text="${#strings.contains(msg,'g')}"></span><br/>
+	<!-- 判断是否以指定字符串开始和结尾 -->
+	<hr/>
+	<span th:text="${#strings.startsWith(msg,'th')}"></span><br/>
+	<span th:text="${#strings.startsWith(msg,'g')}"></span><br/>
+	<span th:text="${#strings.endsWith(msg,'th')}"></span><br/>
+	<span th:text="${#strings.endsWith(msg,'!')}"></span><br/>
+	<!-- 判断字符串的长度和字符在字符串中的索引 -->
+	<hr/>
+	<span th:text="${#strings.length(msg)}"></span><br/>
+	<span th:text="${#strings.indexOf(msg,'h')}"></span><br/>
+	<span th:text="${#strings.indexOf(msg,'S')}"></span><br/>
+	<!-- 字符串大小写转换 -->
+	<span th:text="${#strings.toUpperCase(msg)}"></span><br/>
+	<span th:text="${#strings.toLowerCase(msg)}"></span><br/>
+	<!-- 字符串截取 -->
+	<span th:text="${#strings.substring(msg,8)}"></span><br/>
+	<span th:text="${#strings.substring(msg,8,10)}"></span><br/>
+</body>
+</html>
