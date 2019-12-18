@@ -20,6 +20,7 @@
 		<module>06-springboot-thymeleaf-desc</module>
 		<module>07-springboot-mybatis</module>
 		<module>08-springboot-exception</module>
+		<module>09-springboot-environment</module>
 	</modules>
 	
 	<properties>
