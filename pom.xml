@@ -21,11 +21,13 @@
 		<module>07-springboot-mybatis</module>
 		<module>08-springboot-exception</module>
 		<module>09-springboot-environment</module>
+		<module>10-springboot-admin</module>
 	</modules>
 	
 	<properties>
 		<java.version>1.8</java.version>
 		<springboot-mybatis.version>2.1.1</springboot-mybatis.version>
+		<springboot-admin.version>2.2.0</springboot-admin.version>
 		<mysql.version>5.1.47</mysql.version>
 	</properties>
 	
@@ -35,6 +37,18 @@
 			    <groupId>org.mybatis.spring.boot</groupId>
 			    <artifactId>mybatis-spring-boot-starter</artifactId>
 			    <version>${springboot-mybatis.version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>de.codecentric</groupId>
+			    <artifactId>spring-boot-admin-starter-server</artifactId>
+			    <version>${springboot-admin.version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>de.codecentric</groupId>
+			    <artifactId>spring-boot-admin-starter-client</artifactId>
+			    <version>${springboot-admin.version}</version>
 			</dependency>
 			
 			<dependency>
