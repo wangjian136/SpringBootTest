@@ -22,6 +22,7 @@
 		<module>08-springboot-exception</module>
 		<module>09-springboot-environment</module>
 		<module>10-springboot-admin</module>
+		<module>11-springboot-springdata-jpa</module>
 	</modules>
 	
 	<properties>
@@ -29,6 +30,7 @@
 		<springboot-mybatis.version>2.1.1</springboot-mybatis.version>
 		<springboot-admin.version>2.2.0</springboot-admin.version>
 		<mysql.version>5.1.47</mysql.version>
+		<druid.version>1.1.21</druid.version>
 	</properties>
 	
 	<dependencyManagement>
@@ -55,6 +57,12 @@
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
 				<version>${mysql.version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>com.alibaba</groupId>
+			    <artifactId>druid</artifactId>
+			    <version>${druid.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

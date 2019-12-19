@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thymeleaf</title>
+</head>
+<body>
+	<table border="0">
+		<tr>
+			<th>编号</th>
+			<th>名称</th>
+			<th>描述</th>
+		</tr>
+		<tr th:each="blog : ${blogs}">
+			<td th:text="${blog.id}"></td>
+			<td th:text="${blog.name}"></td>
+			<td th:text="${blog.descs}"></td>
+		</tr>
+	</table>
+</body>
+</html>
