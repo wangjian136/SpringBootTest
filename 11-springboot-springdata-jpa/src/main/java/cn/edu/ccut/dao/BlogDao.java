@@ -1,15 +1,15 @@
 package cn.edu.ccut.dao;
-
-import java.util.List;
-
-
+ 
+import org.springframework.data.jpa.repository.JpaRepository;
+ 
 import cn.edu.ccut.bo.Blog;
-
-public interface BlogDao {
-
-	public Blog selectBlog(Integer id);
+/**
+ * 继承JpaRepository<T, ID>接口
+ * T传入当前操作的实体类，ID传入该类的主键类型
+ * @author jwang
+ *
+ */
+public interface BlogDao extends JpaRepository<Blog, Integer>{
+ 
 	
-	public List<Blog> selectAllBlog();
-	
-	public void createBlog(Blog blog);
 }

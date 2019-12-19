@@ -19,17 +19,17 @@ public class BlogServiceImpl implements BlogService {
 
 	@Override
 	public List<Blog> selectAll() {
-		return blogDao.selectAllBlog();
+		return blogDao.findAll();
 	}
 
 	@Override
 	public void saveBlog(Blog blog) {
-		blogDao.createBlog(blog);
+		blogDao.save(blog);
 	}
 
 	@Override
 	public Blog selectBlogById(Integer id) {
-		return blogDao.selectBlog(id);
+		return blogDao.findById(id).get();
 	}
 
 }

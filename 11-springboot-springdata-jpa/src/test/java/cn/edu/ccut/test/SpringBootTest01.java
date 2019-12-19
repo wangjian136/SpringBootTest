@@ -19,7 +19,7 @@ public class SpringBootTest01 {
 
 	@Test
 	public void testSpringInit() {
-		//System.out.println(blogService.selectAll());
+		System.out.println(blogService.selectAll());
 		
 		//System.out.println(blogService.selectBlogById(101));
 		
